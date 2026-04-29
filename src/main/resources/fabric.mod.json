@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "template",
+  "version": "${modVersion}",
+  "name": "Template Mod",
+  "description": "Templated Description :)",
+  "authors": [
+    "Syorito Hatsuki"
+  ],
+  "contact": {
+    "homepage": "https://github.com/syorito-hatsuki/fabric-examples",
+    "issues": "https://github.com/syorito-hatsuki/template/issues",
+    "sources": "https://github.com/syorito-hatsuki/template"
+  },
+  "license": "MIT Licence",
+  "icon": "assets/template/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.syoritohatsuki.template.TemplateMod"
+      }
+    ]
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/pbwnMwnUD6"
+      },
+      "badges": [],
+      "update_checker": true
+    },
+    "mcb": [
+      {
+        "name": "Ducky House",
+        "fillColor": -13730510,
+        "outlineColor": -11751600
+      }
+    ]
+  },
+  "mixins": [
+    "template.mixins.json"
+  ],
+  "depends": {
+    "fabric-api": "*",
+    "fabric-language-kotlin": "*",
+    "fabricloader": ">=${loaderVersion}",
+    "java": "*",
+    "minecraft": ">=${minecraftVersion}"
+  },
+  "recommends": {
+    "modmenu-badges-lib": "*"
+  }
+}
