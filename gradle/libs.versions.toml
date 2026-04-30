@@ -1,13 +1,20 @@
 [versions]
+#emi = ""
 fabric-api = "0.145.1+26.1"
 fabric-loader = "0.18.6"
 fabric-loom = "1.15-SNAPSHOT"
 fabric-language-kotlin = "1.13.10+kotlin.2.3.20"
+jei = "29.5.0.27"
 kotlin = "2.3.20"
 minecraft = "26.1"
 modmenu-badges = "2026.3.1"
 
 [libraries]
+#emi-fabric = { module = "dev.emi:emi-fabric", version.ref = "emi" }
+#emi-fabric-api = { module = "dev.emi:emi-fabric", version.ref = "emi" }
+
+jei-fabric-api = { group = "mezz.jei", name = "jei-26.1.2-fabric-api", version.ref = "jei" }
+jei-fabric = { group = "mezz.jei", name = "jei-26.1.2-fabric", version.ref = "jei" }
 fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
 fabric-language-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabric-language-kotlin" }
 fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }

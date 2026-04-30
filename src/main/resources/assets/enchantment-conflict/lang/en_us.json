@@ -1,0 +1,7 @@
+{
+  "key.category.enchantment-conflict.enchantment-conflict": "Enchantment Conflict",
+  "key.enchantment-conflict.show_conflicted_enchantments": "Show Conflicted Enchantments",
+  "key.description.enchantment-conflict.show_conflicted_enchantments": "Press [%s] to show conflicts",
+  "key.description.enchantment-conflict.conflict_with": "Conflict with: %s",
+  "jei.description.enchantment-conflict.conflict_with": "Conflict with:"
+}

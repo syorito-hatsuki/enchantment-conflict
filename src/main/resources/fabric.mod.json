@@ -1,25 +1,38 @@
 {
   "schemaVersion": 1,
-  "id": "template",
+  "id": "enchantment-conflict",
   "version": "${modVersion}",
-  "name": "Template Mod",
-  "description": "Templated Description :)",
+  "name": "Enchantment Conflict",
+  "description": "Research with enchantments conflicts",
   "authors": [
     "Syorito Hatsuki"
   ],
   "contact": {
-    "homepage": "https://github.com/syorito-hatsuki/fabric-examples",
-    "issues": "https://github.com/syorito-hatsuki/template/issues",
-    "sources": "https://github.com/syorito-hatsuki/template"
+    "homepage": "https://github.com/syorito-hatsuki/",
+    "issues": "https://github.com/syorito-hatsuki/enchantment-conflict/issues",
+    "sources": "https://github.com/syorito-hatsuki/enchantment-conflict"
   },
   "license": "MIT Licence",
-  "icon": "assets/template/icon.png",
+  "icon": "assets/enchantment-conflict/icon.png",
+  "accessWidener": "enchantment-conflict.accesswidener",
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "dev.syoritohatsuki.template.TemplateMod"
+        "value": "dev.syoritohatsuki.enchantmentconflict.EnchantmentConflict"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.syoritohatsuki.enchantmentconflict.client.EnchantmentConflictClient"
+      }
+    ],
+    "jei_mod_plugin": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.syoritohatsuki.enchantmentconflict.client.integration.jei.EnchantmentConflictJEIPlugin"
       }
     ]
   },
@@ -40,7 +53,7 @@
     ]
   },
   "mixins": [
-    "template.mixins.json"
+    "enchantment-conflict.mixins.json"
   ],
   "depends": {
     "fabric-api": "*",
@@ -50,6 +63,7 @@
     "minecraft": ">=${minecraftVersion}"
   },
   "recommends": {
-    "modmenu-badges-lib": "*"
+    "modmenu-badges-lib": "*",
+    "jei": "*"
   }
 }

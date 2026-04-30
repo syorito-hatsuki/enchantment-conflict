@@ -26,6 +26,16 @@ repositories {
             includeGroup("maven.modrinth")
         }
     }
+    maven("https://maven.terraformersmc.com/") {
+        name = "TerraformersMC"
+    }
+    maven("https://maven.blamejared.com/") {
+        name = "Jared's maven"
+    }
+}
+
+loom {
+    accessWidenerPath.set(File("src/main/resources/enchantment-conflict.accesswidener"))
 }
 
 dependencies {
@@ -34,6 +44,9 @@ dependencies {
     implementation(libs.fabric.api)
     implementation(libs.fabric.loader)
     implementation(libs.fabric.language.kotlin)
+
+    compileOnlyApi(libs.jei.fabric.api)
+    runtimeOnly(libs.jei.fabric)
 
     embed(libs.modmenu.badges)
 }

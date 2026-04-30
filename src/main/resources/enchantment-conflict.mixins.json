@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.syoritohatsuki.enchantmentconflict.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "world.item.ItemsMixin",
+    "ItemStackMixin"
+  ]
+}
