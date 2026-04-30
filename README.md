@@ -11,14 +11,10 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/syorito-hatsuki/<repo>">
-    <img src="https://github.com/syorito-hatsuki/<repo>/blob/1.20/src/main/resources/assets/<repo>/icon.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">Mod Name</h3>
+<h3 align="center">Enchantment Conflict</h3>
 
   <p align="center">
-    Mod description
+    Stop to guess with enchants conflict/incompatible
     <br />
     <a href="https://discord.gg/pbwnMwnUD6">Support</a>
     ·
@@ -48,7 +44,8 @@
 
 ![In-Game ScreenShot][screenshot]
 
-Somebody once told me the world is gonna roll me
+Add conflict / incompatibility tooltips to enchantment books to help you find out what enchantments are incompatible
+with each other.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,25 +54,35 @@ Somebody once told me the world is gonna roll me
 * ![Fabric][fabric]
 * ![Fabric-Language-Kotlin][fabric-language-kotlin]
 * ![ModMenu Badges Lib][modmenu-badges-lib]
-* ![Ducky-Updater-Lib][ducky-updater-lib]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
+Default keybinds:
+
+| Key      | Action                          |
+|----------|---------------------------------|
+| Left Alt | Expand tooltip to see conflicts |
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap
 
-See the [open issues](https://github.com/syorito-hatsuki/<repo>/issues) for a full list of proposed features (and known issues).
+- [ ] Config screen
+
+See the [open issues](https://github.com/syorito-hatsuki/<repo>/issues) for a full list of proposed features (and known
+issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any
+contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also
+simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
@@ -92,33 +99,42 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/syorito-hatsuki/<repo>.svg?style=for-the-badge
-[contributors-url]: https://github.com/syorito-hatsuki/<repo>/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/syorito-hatsuki/enchantment-conflict.svg?style=for-the-badge
 
-[forks-shield]: https://img.shields.io/github/forks/syorito-hatsuki/<repo>.svg?style=for-the-badge
-[forks-url]: https://github.com/syorito-hatsuki/<repo>/network/members
+[contributors-url]: https://github.com/syorito-hatsuki/enchantment-conflict/graphs/contributors
 
-[stars-shield]: https://img.shields.io/github/stars/syorito-hatsuki/<repo>.svg?style=for-the-badge
-[stars-url]: https://github.com/syorito-hatsuki/<repo>/stargazers
+[forks-shield]: https://img.shields.io/github/forks/syorito-hatsuki/enchantment-conflict.svg?style=for-the-badge
 
-[issues-shield]: https://img.shields.io/github/issues/syorito-hatsuki/<repo>.svg?style=for-the-badge
-[issues-url]: https://github.com/syorito-hatsuki/<repo>/issues
+[forks-url]: https://github.com/syorito-hatsuki/enchantment-conflict/network/members
 
-[license-shield]: https://img.shields.io/github/license/syorito-hatsuki/<repo>.svg?style=for-the-badge
-[license-url]: https://github.com/syorito-hatsuki/<repo>/blob/master/LICENSE.txt
+[stars-shield]: https://img.shields.io/github/stars/syorito-hatsuki/enchantment-conflict.svg?style=for-the-badge
+
+[stars-url]: https://github.com/syorito-hatsuki/enchantment-conflict/stargazers
+
+[issues-shield]: https://img.shields.io/github/issues/syorito-hatsuki/enchantment-conflict.svg?style=for-the-badge
+
+[issues-url]: https://github.com/syorito-hatsuki/enchantment-conflict/issues
+
+[license-shield]: https://img.shields.io/github/license/syorito-hatsuki/enchantment-conflict.svg?style=for-the-badge
+
+[license-url]: https://github.com/syorito-hatsuki/enchantment-conflict/blob/master/LICENSE.txt
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
 [linkedin-url]: https://linkedin.com/in/kit-lehto
 
 [discord-shield]: https://img.shields.io/discord/1032138561618726952?logo=discord&logoColor=white&style=for-the-badge&label=Discord
+
 [discord-url]: https://discord.gg/pbwnMwnUD6
 
-[modrinth-shield]: https://img.shields.io/modrinth/v/<repo>?label=Modrinth&style=for-the-badge
-[modrinth-url]: https://modrinth.com/mod/<repo>
+[modrinth-shield]: https://img.shields.io/modrinth/v/enchantment-conflict?label=Modrinth&style=for-the-badge
 
-[screenshot]: <image-url>
+[modrinth-url]: https://modrinth.com/mod/enchantment-conflict
+
+[screenshot]: https://cdn.modrinth.com/data/LXQv6OLE/images/bc4c94b2822455765049ba55023d8e6e43b5f562.png
 
 [fabric]: https://img.shields.io/badge/fabric%20api-DBD0B4?style=for-the-badge
+
 [fabric-language-kotlin]: https://img.shields.io/badge/fabric%20language%20kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white
+
 [modmenu-badges-lib]: https://img.shields.io/badge/modmenu%20badges%20lib-434956?style=for-the-badge
-[ducky-updater-lib]: https://img.shields.io/badge/ducky%20updater%20lib-1bd96a?style=for-the-badge
