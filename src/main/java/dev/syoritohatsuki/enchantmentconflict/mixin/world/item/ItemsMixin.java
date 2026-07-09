@@ -4,6 +4,7 @@ import dev.syoritohatsuki.enchantmentconflict.core.component.EnchantmentConflict
 import dev.syoritohatsuki.enchantmentconflict.item.enchantment.ItemEnchantmentsConflict;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
@@ -15,12 +16,14 @@ public class ItemsMixin {
             method = "<clinit>",
             slice = @Slice(
                     from = @At(
-                            value = "CONSTANT",
-                            args = "stringValue=enchanted_book"
-                    )),
+                            value = "FIELD",
+                            target = "Lnet/minecraft/references/ItemIds;ENCHANTED_BOOK:Lnet/minecraft/resources/ResourceKey;",
+                            opcode = Opcodes.GETSTATIC)
+            ),
             at = @At(
                     value = "INVOKE",
-                    target = "Lnet/minecraft/world/item/Items;registerItem(Ljava/lang/String;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;", ordinal = 0
+                    target = "Lnet/minecraft/world/item/Items;registerItem(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;",
+                    ordinal = 0
             ),
             index = 1
     )
