@@ -7,7 +7,6 @@ import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper
 import net.minecraft.client.KeyMapping
 import net.minecraft.resources.Identifier
-import org.lwjgl.glfw.GLFW
 import org.slf4j.Logger
 
 
@@ -21,8 +20,8 @@ object EnchantmentConflictClient : ClientModInitializer {
     var showEnchantmentsConflict: KeyMapping = KeyMappingHelper.registerKeyMapping(
         KeyMapping(
             "key.${EnchantmentConflict.MOD_ID}.show_conflicted_enchantments",
-            InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_LEFT_ALT,
+            InputConstants.Type.KEYBOARD,
+            InputConstants.KEY_LSHIFT,
             CATEGORY
         )
     )
